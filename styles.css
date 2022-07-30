@@ -194,7 +194,7 @@ input:checked + .slider:before {
         font-size: 50px;
     }
 }
-@media (max-width: 767px) {
+@media (min-width: 545px) and (max-width: 767px) {
     .container .top {
         position: absolute;
         top: 0;
@@ -232,5 +232,91 @@ input:checked + .slider:before {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+}
+@media (min-width: 400px) and (max-width: 544px) {
+    .container .top {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 200px;
+        height: 658px;
+        overflow: hidden;
+    }
+    #monthly-pay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #basic {
+        margin-bottom: 50px;
+        width: 50%; 
+    }
+    #professional {
+        margin-bottom: 50px;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        margin-bottom: 50px;
+        width: 50%; 
+    }
+    #master {
+        margin-bottom: 50px;
+        width: 50%; 
+    }
+    .container .bottom {
+        display: none;
+    }
+    .display #annual-pay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #basic #dollar, #master #dollar, #professional #dollar {
+        font-size: 40px;
+    }
+}
+@media (max-width: 399px) {
+    .container .top {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 200px;
+        height: 658px;
+        overflow: hidden;
+    }
+    #monthly-pay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #basic {
+        margin-bottom: 50px;
+        width: 50%; 
+    }
+    #professional {
+        margin-bottom: 50px;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        margin-bottom: 50px;
+        width: 50%; 
+    }
+    #master {
+        margin-bottom: 50px;
+        width: 50%; 
+    }
+    .container .bottom {
+        display: none;
+    }
+    .display #annual-pay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #basic #dollar, #master #dollar, #professional #dollar {
+        font-size: 30px;
     }
 }
